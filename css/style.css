@@ -415,7 +415,7 @@ template {
   line-height: 18px;
 }
 
-.logo {
+.navbar .logo__image {
   width: 177px;
 }
 
@@ -439,6 +439,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  cursor: pointer;
 }
 
 .search__button {
@@ -449,6 +450,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -546,6 +548,8 @@ template {
 }
 
 @media (max-width: 576px) {
-  width: 99px;
+  .logo {
+    width: 99px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
