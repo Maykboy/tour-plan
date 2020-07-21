@@ -625,6 +625,10 @@ template {
   border-radius: 8px;
 }
 
+.swiper-slide__image {
+  width: 100%;
+}
+
 .swiper-slide::after {
   content: '';
   width: 100%;
