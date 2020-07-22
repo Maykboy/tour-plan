@@ -585,6 +585,45 @@ template {
           justify-content: space-between;
 }
 
+.hotel-slider {
+  width: 728px;
+  height: 450px;
+}
+
+.hotel-slider__button {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.hotel-slider__button:active, .hotel-slider__button:hover, .hotel-slider__button:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -625,11 +664,11 @@ template {
   border-radius: 8px;
 }
 
-.swiper-slide__image {
+.hotel-slider__item {
   width: 100%;
 }
 
-.swiper-slide::after {
+.hotel-slider::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -641,40 +680,6 @@ template {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 10;
-}
-
-.slider {
-  width: 728px;
-  height: 450px;
-}
-
-.slider-button {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 99;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.slider-button--next {
-  right: 18px;
-  background-image: url(../img/arrow-next.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-}
-
-.slider-button--prev {
-  left: 18px;
-  background-image: url(../img/arrow-prev.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
 }
 
 .booking {
