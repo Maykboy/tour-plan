@@ -865,7 +865,7 @@ template {
 
 .subscribe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -1069,14 +1069,18 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
-  .subscrible {
+  .subscribe {
     width: 100%;
   }
 }
 
-@media (min-width: 320px) and (max-width: 480) {
+@media (min-width: 320px) and (max-width: 480px) {
   .slider {
     height: 179px;
+  }
+  .newsletter__subscribe {
+    padding-left: 20px;
+    width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
