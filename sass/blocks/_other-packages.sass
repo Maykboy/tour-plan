@@ -1,0 +1,28 @@
+.other-packages
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 65px
+  &__wrapper
+.package-layer
+  display: grid
+  grid-template-columns: repeat(2, 1fr) 
+  position: relative
+  &__image
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -1
+  &__grid
+    background-color: $dark
+    order: 1
+  
