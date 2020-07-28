@@ -447,6 +447,11 @@ template {
   cursor: pointer;
 }
 
+.search__input:active, .search__input:hover, .search__input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -456,6 +461,11 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+}
+
+.search__button:active, .search__button:hover, .search__button:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .user {
@@ -807,6 +817,11 @@ template {
   line-height: 19px;
 }
 
+.booking__button:active, .booking__button:hover, .booking__button:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .map {
   width: 347px;
   height: 213px;
@@ -886,6 +901,11 @@ template {
   line-height: 18px;
 }
 
+.subscribe__input:active, .subscribe__input:hover, .subscribe__input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .subscribe__button {
   position: absolute;
   right: 0;
@@ -896,6 +916,11 @@ template {
   color: #ffffff;
   min-width: 65px;
   cursor: pointer;
+}
+
+.subscribe__button:active, .subscribe__button:hover, .subscribe__button:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .reviews {
@@ -1130,6 +1155,11 @@ template {
   padding: 7px 22px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.card__button:active, .card__button:hover, .card__button:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .other-packages__title {
@@ -1413,6 +1443,11 @@ template {
   font-size: 14px;
   line-height: 19px;
   cursor: pointer;
+}
+
+.package-price__button:active, .package-price__button:hover, .package-price__button:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 @media (max-width: 1200px) {
