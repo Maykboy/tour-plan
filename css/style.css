@@ -1152,6 +1152,7 @@ template {
       grid-template-rows: 500px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+  margin-bottom: 30px;
 }
 
 .other-packages__wrapper--second {
