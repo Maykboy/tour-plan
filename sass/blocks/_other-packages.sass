@@ -8,11 +8,45 @@
     text-transform: uppercase
     margin-bottom: 65px
   &__wrapper
+    &--first
+      display: grid
+      grid-template-columns: minmax(350px, 730px) min-content
+      grid-template-rows: 500px
+      column-gap: 30px
+    &--second
+      display: grid
+      grid-template-columns: repeat(3, 350px)
+      grid-template-rows: 500px
+      column-gap: 30px
+      margin-bottom: 70px
 .package-layer
-  display: grid
-  grid-template-columns: repeat(2, 1fr) 
-  grid-template-rows: 500px
-  position: relative
+  &__haven
+    display: grid
+    grid-template-columns: repeat(2, 365px)
+    grid-template-rows: 500px
+    position: relative
+    overflow: hidden
+  &__mare
+    display: grid
+    grid-template-rows: repeat(2, 250px)
+    grid-template-columns: 350px
+    position: relative
+    overflow: hidden
+  &__white
+    display: grid
+    grid-template-rows: repeat(2, 250px)
+    grid-template-columns: 350px
+    position: relative
+  &__luxury
+    display: grid
+    grid-template-rows: repeat(2, 250px)
+    grid-template-columns: 350px
+    position: relative
+  &__star
+    display: grid
+    grid-template-rows: repeat(2, 250px)
+    grid-template-columns: 350px
+    position: relative
   &__button
     max-width: 95px
     height: 30px
@@ -26,27 +60,63 @@
     line-height: 15px
     margin-top: 26px
   &__image
-    position: absolute
-    left: 0
-    right: 0
-    top: 0
-    bottom: 0
-    width: 100%
-    height: 100%
-    object-fit: cover
-    border-radius: 8px 0
-    z-index: -1
+    &--haven
+      position: absolute
+      object-fit: cover
+      border-radius: 8px 0
+      z-index: -1
+      min-height: 100%
+      max-width: 100%
+    &--mare
+      position: absolute
+      object-fit: cover
+      border-radius: 8px 0
+      z-index: -1
+      min-height: 100%
+      max-width: 100%
+    &--white
+      position: absolute
+      object-fit: cover
+      border-radius: 8px 0
+      z-index: -1
+      min-height: 100%
+      max-width: 100%
+    &--luxury
+      position: absolute
+      object-fit: cover
+      border-radius: 8px 0
+      z-index: -1
+      min-height: 100%
+      max-width: 100%
+    &--star
+      position: absolute
+      object-fit: cover
+      border-radius: 8px 0
+      z-index: -1
+      min-height: 100%
+      max-width: 100%
   &__grid
-    background-color: $dark
-    padding-top: 46px
-    padding-left: 43px
-    order: 1
+    &--haven
+      background-color: $dark
+      padding-top: 46px
+      padding-left: 43px
+    &--all
+      background-color: $dark
+      padding-top: 30px
+      padding-left: 32px
   &__title
-    font-style: normal
-    font-weight: bold
-    font-size: 18px
-    line-height: 23px
-    color: $light
+    &--haven
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      color: $light
+    &--all
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      color: $light
   &__text
     font-family: Muli
     font-style: normal
@@ -56,6 +126,9 @@
     color: $light
 .package-info
 .package-info-text
+  &--haven, 
+  &--all
+    margin-bottom: 11px
   &__description
     font-style: normal
     font-weight: normal
@@ -63,6 +136,9 @@
     line-height: 15px
     color: $light
 .package-info-user
+  &--haven,
+  &--all
+    margin-bottom: 11px
   &__description
     font-style: normal
     font-weight: normal
@@ -70,6 +146,10 @@
     line-height: 15px
     color: $light
 .package-info-room
+  &--haven
+    margin-bottom: 37px
+  &--all
+    margin-bottom: 24px
   &__description
     font-style: normal
     font-weight: normal
@@ -79,7 +159,44 @@
 .package-price
   display: grid
   &__info
-    display: grid 
-    grid-column: 1/1
+    &--haven
+      display: grid
+      grid-column: 1/1
+      color: $light
+    &--all
+      display: grid
+      grid-column: 1/1
+      color: $light
+  &__full
+    &--haven,
+    &--all
+      margin-bottom: 5px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+  &__discount
+    &--haven,
+    &--all
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
   &__button
-    grid-column-start: 3
+    &--haven,
+    &--all
+      grid-column-start: 3
+      align-self: end
+      background-color: $primary
+      border: none
+      border-radius: 4px
+      max-width: 120px
+      height: 40px
+      color: $light
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      cursor: pointer
+    
+     
