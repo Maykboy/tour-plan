@@ -1205,6 +1205,7 @@ template {
   -ms-grid-rows: 500px;
       grid-template-rows: 500px;
   position: relative;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -1216,6 +1217,7 @@ template {
   -ms-grid-columns: 350px;
       grid-template-columns: 350px;
   position: relative;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -1227,6 +1229,8 @@ template {
   -ms-grid-columns: 350px;
       grid-template-columns: 350px;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .package-layer__luxury {
@@ -1237,6 +1241,8 @@ template {
   -ms-grid-columns: 350px;
       grid-template-columns: 350px;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .package-layer__star {
@@ -1247,6 +1253,8 @@ template {
   -ms-grid-columns: 350px;
       grid-template-columns: 350px;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .package-layer__button {
@@ -1267,7 +1275,7 @@ template {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px 0;
+  border-radius: 8px;
   z-index: -1;
   min-height: 100%;
   max-width: 100%;
@@ -1277,7 +1285,7 @@ template {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px 0;
+  border-radius: 8px;
   z-index: -1;
   min-height: 100%;
   max-width: 100%;
@@ -1287,7 +1295,7 @@ template {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px 0;
+  border-radius: 8px;
   z-index: -1;
   min-height: 100%;
   max-width: 100%;
@@ -1297,7 +1305,7 @@ template {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px 0;
+  border-radius: 8px;
   z-index: -1;
   min-height: 100%;
   max-width: 100%;
@@ -1307,7 +1315,7 @@ template {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px 0;
+  border-radius: 8px;
   z-index: -1;
   min-height: 100%;
   max-width: 100%;
