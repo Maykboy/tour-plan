@@ -10,16 +10,17 @@
   &__wrapper
     &--first
       display: grid
-      grid-template-columns: minmax(350px, 730px) min-content
-      grid-template-rows: 500px
-      column-gap: 30px
-      margin-bottom: 30px
-    &--second
-      display: grid
-      grid-template-columns: repeat(3, 350px)
-      grid-template-rows: 500px
+      grid-template-columns: repeat(1, 2.2fr) 1fr 1fr 1fr 1fr
+      grid-template-rows: repeat(2, 500px)
+      row-gap: 30px
       column-gap: 30px
       margin-bottom: 70px
+    // &--second
+    //   display: grid
+    //   grid-template-columns: repeat(3, 350px)
+    //   grid-template-rows: 500px
+    //   column-gap: 30px
+    //   margin-bottom: 70px
 .package-layer
   &__haven
     display: grid
@@ -28,6 +29,7 @@
     position: relative
     border-radius: 8px
     overflow: hidden
+    grid-column-start: span 3
   &__mare
     display: grid
     grid-template-rows: repeat(2, 250px)
@@ -35,6 +37,7 @@
     position: relative
     border-radius: 8px
     overflow: hidden
+    grid-column-start: span 2
   &__white
     display: grid
     grid-template-rows: repeat(2, 250px)
@@ -42,6 +45,7 @@
     position: relative
     border-radius: 8px
     overflow: hidden
+    grid-column-end: span 1
   &__luxury
     display: grid
     grid-template-rows: repeat(2, 250px)
@@ -49,6 +53,7 @@
     position: relative
     border-radius: 8px
     overflow: hidden
+    grid-column-end: span 2
   &__star
     display: grid
     grid-template-rows: repeat(2, 250px)
@@ -56,6 +61,7 @@
     position: relative
     border-radius: 8px
     overflow: hidden
+    grid-column-end: span 2
   &__button
     max-width: 95px
     height: 30px
@@ -82,28 +88,28 @@
       border-radius: 8px
       z-index: -1
       min-height: 100%
-      max-width: 100%
+      max-width: 350px
     &--white
       position: absolute
       object-fit: cover
       border-radius: 8px
       z-index: -1
       min-height: 100%
-      max-width: 100%
+      max-width: 350px
     &--luxury
       position: absolute
       object-fit: cover
       border-radius: 8px
       z-index: -1
       min-height: 100%
-      max-width: 100%
+      max-width: 350px
     &--star
       position: absolute
       object-fit: cover
       border-radius: 8px
       z-index: -1
       min-height: 100%
-      max-width: 100%
+      max-width: 350px
   &__grid
     &--haven
       background-color: $dark
@@ -126,6 +132,7 @@
       font-size: 18px
       line-height: 23px
       color: $light
+      margin-top: 0
   &__text
     font-family: Muli
     font-style: normal
@@ -133,7 +140,12 @@
     font-size: 14px
     line-height: 160.6%
     color: $light
+    margin-top: 0
 .package-info
+  &--haven
+    margin-bottom: 37px
+  &--all
+    margin-bottom: 24px
 .package-info-text
   &--haven, 
   &--all
@@ -155,10 +167,6 @@
     line-height: 15px
     color: $light
 .package-info-room
-  &--haven
-    margin-bottom: 37px
-  &--all
-    margin-bottom: 24px
   &__description
     font-style: normal
     font-weight: normal
@@ -170,11 +178,9 @@
   &__info
     &--haven
       display: grid
-      grid-column: 1/1
       color: $light
     &--all
-      display: grid
-      grid-column: 1/1
+      display: grid 
       color: $light
   &__full
     &--haven,

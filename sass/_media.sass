@@ -10,6 +10,44 @@
   .card
     width: 230px
     height: 230px
+  .other-packages
+    &__wrapper
+      &--first
+        column-gap: 20px
+        row-gap: 20px
+        margin-bottom: 60px
+  .package-layer
+    &__haven
+      grid-template-columns: repeat(2, 1fr)
+      grid-column-start: span 3
+    &__mare
+      grid-template-columns: 1fr
+    &__white
+      grid-template-columns: 1fr
+    &__luxury
+      grid-template-columns: 1fr
+    &__star
+      grid-template-columns: 1fr
+    &__image
+      &--haven
+        grid-template-columns: 1fr
+    &__grid
+      &--haven
+        padding-top: 40px
+        padding-left: 27px
+  .package-price
+    grid-template-columns: 120px
+    &__info
+      &--all 
+    &__full
+    &__discount
+    &__button
+      width: 90%
+      height: 35px
+      &--haven
+      &--all
+        grid-column-start: 2
+        justify-self: start
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -58,6 +96,30 @@
   .card
     width: 340px
     height: 255px
+  .other-packages
+    &__title
+      font-size: 30px
+      line-height: 40px
+    &__wrapper
+      &--first
+        grid-template-rows: repeat(2, 1fr)
+  .package-layer
+    &__haven
+      grid-template-rows: 1fr
+    &__mare
+      grid-template-rows: repeat(2, 1fr)
+    &__white
+      grid-template-rows: repeat(2, 1fr)
+    &__luxury
+      grid-template-rows: repeat(2, 1fr)
+    &__star
+      grid-template-rows: repeat(2, 1fr)
+  .package-info
+    &--haven
+      margin-bottom: 14px
+  .package-price
+    grid-template-columns: 50%
+    margin-bottom: 10px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -141,6 +203,23 @@
     padding-bottom: 60px
   .card
     width: 49%
+  .other-packages
+    &__title
+    &__wrapper
+      &--first
+        grid-template-rows: repeat(3, 1fr)
+        grid-template-columns: 2.2fr 1fr 1fr 1fr 1fr
+  .package-layer
+    &__haven
+      grid-column-start: span 5
+    &__mare
+      grid-column-end: span 3
+    &__white
+      grid-column-end: span 3
+    &__luxury
+      grid-column-end: span 2.9
+    &__star
+      grid-column-end: span 3
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -157,6 +236,31 @@
     width: 100%  
   .card
     width: 100%  
+  .package-layer
+    &__title
+      &--all
+      &--haven
+        font-size: 15px
+        line-height: 18px
+    &__text
+      font-size: 12px
+      line-height: 160.6%
+  .package-price
+    &__full
+      &--haven,
+      &--all
+        font-size: 12px
+        line-height: 16px
+    &__discount
+      &--haven,
+      &--all
+        font-size: 18px
+        line-height: 22px
+    &__button
+      &--all,
+      &--haven
+        font-size: 12px
+        line-height: 16px
 @media (min-width: 320px) and (max-width:480px)
   .hotel-slider
     height: 179px
