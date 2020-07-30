@@ -1594,28 +1594,40 @@ template {
     line-height: 40px;
   }
   .other-packages__wrapper--first {
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: 2.2fr 1fr 2fr 1fr 1fr;
+        grid-template-columns: 2.2fr 1fr 2fr 1fr 1fr;
   }
   .package-layer__haven {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+    -ms-grid-column: span 4;
+        grid-column-start: span 4;
   }
   .package-layer__mare {
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
   }
   .package-layer__white {
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
   }
   .package-layer__luxury {
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
   }
   .package-layer__star {
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
   }
   .package-info--haven {
     margin-bottom: 14px;
@@ -1754,8 +1766,8 @@ template {
     width: 49%;
   }
   .other-packages__wrapper--first {
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
     -ms-grid-columns: 2.2fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 2.2fr 1fr 1fr 1fr 1fr;
   }
@@ -1764,20 +1776,27 @@ template {
         grid-column-start: span 5;
   }
   .package-layer__mare {
-    -ms-grid-column-span: 3;
-        grid-column-end: span 3;
+    -ms-grid-column: span 5;
+        grid-column-start: span 5;
   }
   .package-layer__white {
-    -ms-grid-column-span: 3;
-        grid-column-end: span 3;
+    -ms-grid-column-span: 5;
+        grid-column-end: span 5;
   }
   .package-layer__luxury {
-    -ms-grid-column-span: 2.9;
-        grid-column-end: span 2.9;
+    -ms-grid-column-span: 5;
+        grid-column-end: span 5;
   }
   .package-layer__star {
-    -ms-grid-column-span: 3;
-        grid-column-end: span 3;
+    -ms-grid-column-span: 5;
+        grid-column-end: span 5;
+  }
+  .package-layer__image--mare, .package-layer__image--white, .package-layer__image--luxury, .package-layer__image--star {
+    max-width: 100%;
+  }
+  .package-price__button--all {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
   }
 }
 

@@ -102,18 +102,24 @@
       line-height: 40px
     &__wrapper
       &--first
-        grid-template-rows: repeat(2, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+        grid-template-columns: 2.2fr 1fr 2fr 1fr 1fr
   .package-layer
     &__haven
       grid-template-rows: 1fr
+      grid-column-start: span 4
     &__mare
       grid-template-rows: repeat(2, 1fr)
+      grid-column-start: span 2
     &__white
       grid-template-rows: repeat(2, 1fr)
+      grid-column-start: span 2
     &__luxury
       grid-template-rows: repeat(2, 1fr)
+      grid-column-start: span 2
     &__star
       grid-template-rows: repeat(2, 1fr)
+      grid-column-start: span 2
   .package-info
     &--haven
       margin-bottom: 14px
@@ -207,19 +213,29 @@
     &__title
     &__wrapper
       &--first
-        grid-template-rows: repeat(3, 1fr)
+        grid-template-rows: repeat(5, 1fr)
         grid-template-columns: 2.2fr 1fr 1fr 1fr 1fr
   .package-layer
     &__haven
       grid-column-start: span 5
     &__mare
-      grid-column-end: span 3
+      grid-column-start: span 5
     &__white
-      grid-column-end: span 3
+      grid-column-end: span 5
     &__luxury
-      grid-column-end: span 2.9
+      grid-column-end: span 5
     &__star
-      grid-column-end: span 3
+      grid-column-end: span 5
+    &__image
+      &--mare,
+      &--white,
+      &--luxury,
+      &--star
+        max-width: 100%
+  .package-price
+    &__button
+      &--all
+        grid-column-start: 3
 @media ( max-width: 576px)
   .logo
     width: 99px
