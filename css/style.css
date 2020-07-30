@@ -1780,16 +1780,16 @@ template {
         grid-column-start: span 5;
   }
   .package-layer__white {
-    -ms-grid-column-span: 5;
-        grid-column-end: span 5;
+    -ms-grid-column: span 5;
+        grid-column-start: span 5;
   }
   .package-layer__luxury {
-    -ms-grid-column-span: 5;
-        grid-column-end: span 5;
+    -ms-grid-column: span 5;
+        grid-column-start: span 5;
   }
   .package-layer__star {
-    -ms-grid-column-span: 5;
-        grid-column-end: span 5;
+    -ms-grid-column: span 5;
+        grid-column-start: span 5;
   }
   .package-layer__image--mare, .package-layer__image--white, .package-layer__image--luxury, .package-layer__image--star {
     max-width: 100%;
