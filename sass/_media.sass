@@ -215,10 +215,13 @@
     &__wrapper
       &--first
         grid-template-rows: repeat(5, 1fr)
-        grid-template-columns: 2.2fr 4fr 4fr 4fr
+        grid-template-columns: 4fr 4fr 4fr 4fr
   .package-layer
     &__haven
-      grid-column-start: span 4
+      grid-column-start: 2
+      grid-column-end: span 2
+      grid-template-rows: repeat(2, 1fr)
+      grid-template-columns: 1fr
     &__mare
       grid-column-start: 2
       grid-column-end: span 2
@@ -232,11 +235,29 @@
       grid-column-start: 2
       grid-column-end: span 2
     &__image
+      &--haven,
       &--mare,
       &--white,
       &--luxury,
       &--star
         max-width: 100%
+    &__grid
+      &--haven
+        background-color: $dark
+        padding-top: 30px
+        padding-left: 30px
+        padding-bottom: 30px
+        padding-right: 10px
+      &--all
+        background-color: $dark
+        padding-top: 30px
+        padding-left: 30px
+        padding-bottom: 30px
+        padding-right: 10px
+    &__rating
+      display: none
+    &__text
+      display: none
   .package-price
     &__button
       &--all
