@@ -1765,31 +1765,42 @@ template {
   .card {
     width: 49%;
   }
+}
+
+@media (max-width: 675px) {
   .other-packages__wrapper--first {
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
-    -ms-grid-columns: 2.2fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 2.2fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 2.2fr 4fr 4fr 4fr 4fr;
+        grid-template-columns: 2.2fr 4fr 4fr 4fr 4fr;
   }
   .package-layer__haven {
     -ms-grid-column: span 5;
         grid-column-start: span 5;
   }
   .package-layer__mare {
-    -ms-grid-column: span 5;
-        grid-column-start: span 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
   }
   .package-layer__white {
-    -ms-grid-column: span 5;
-        grid-column-start: span 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
   }
   .package-layer__luxury {
-    -ms-grid-column: span 5;
-        grid-column-start: span 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
   }
   .package-layer__star {
-    -ms-grid-column: span 5;
-        grid-column-start: span 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
   }
   .package-layer__image--mare, .package-layer__image--white, .package-layer__image--luxury, .package-layer__image--star {
     max-width: 100%;
@@ -1797,6 +1808,26 @@ template {
   .package-price__button--all {
     -ms-grid-column: 3;
         grid-column-start: 3;
+  }
+  .package-layer__title--haven {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .package-layer__text {
+    font-size: 12px;
+    line-height: 160.6%;
+  }
+  .package-price__full--haven, .package-price__full--all {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .package-price__discount--haven, .package-price__discount--all {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .package-price__button--all, .package-price__button--haven {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -1821,26 +1852,6 @@ template {
   }
   .card {
     width: 100%;
-  }
-  .package-layer__title--haven {
-    font-size: 15px;
-    line-height: 18px;
-  }
-  .package-layer__text {
-    font-size: 12px;
-    line-height: 160.6%;
-  }
-  .package-price__full--haven, .package-price__full--all {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .package-price__discount--haven, .package-price__discount--all {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .package-price__button--all, .package-price__button--haven {
-    font-size: 12px;
-    line-height: 16px;
   }
 }
 
