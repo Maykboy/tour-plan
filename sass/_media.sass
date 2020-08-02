@@ -209,7 +209,22 @@
     padding-bottom: 60px
   .card
     width: 49%
-@media (max-width: 675px)
+@media (max-width: 576px)
+  .logo
+    width: 99px
+  .hotel-slider
+    height: 250px
+  .hotel
+    &__slider
+      margin-bottom: 20px
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px
+  .subscribe
+    width: 100%  
+  .card
+    width: 100% 
   .other-packages
     &__title
     &__wrapper
@@ -218,22 +233,22 @@
         grid-template-columns: 4fr 4fr 4fr 4fr
   .package-layer
     &__haven
-      grid-column-start: 2
-      grid-column-end: span 2
+      grid-column-start: 1
+      grid-column-end: span 4
       grid-template-rows: repeat(2, 1fr)
       grid-template-columns: 1fr
     &__mare
-      grid-column-start: 2
-      grid-column-end: span 2
+      grid-column-start: 1
+      grid-column-end: span 4
     &__white
-      grid-column-start: 2
-      grid-column-end: span 2
+      grid-column-start: 1
+      grid-column-end: span 4
     &__luxury
-      grid-column-start: 2
-      grid-column-end: span 2
+      grid-column-start: 1
+      grid-column-end: span 4
     &__star
-      grid-column-start: 2
-      grid-column-end: span 2
+      grid-column-start: 1
+      grid-column-end: span 4
     &__image
       &--haven,
       &--mare,
@@ -287,22 +302,6 @@
       &--haven
         font-size: 12px
         line-height: 16px
-@media (max-width: 576px)
-  .logo
-    width: 99px
-  .hotel-slider
-    height: 250px
-  .hotel
-    &__slider
-      margin-bottom: 20px
-  .newsletter
-    padding: 76px 0 83px 0
-    &__title
-      margin-bottom: 37px
-  .subscribe
-    width: 100%  
-  .card
-    width: 100%  
 @media (min-width: 320px) and (max-width: 480px)
   .hotel-slider
     height: 179px
