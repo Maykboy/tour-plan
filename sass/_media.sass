@@ -48,6 +48,9 @@
       &--all
         grid-column-start: 2
         justify-self: start
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -126,6 +129,39 @@
   .package-price
     grid-template-columns: 50%
     margin-bottom: 10px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &__about-info
+      grid-column-end: 5
+      grid-column-start: 1
+    &__pay-card
+      grid-column: 6
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -209,6 +245,9 @@
     padding-bottom: 60px
   .card
     width: 49%
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -302,6 +341,44 @@
       &--haven
         font-size: 12px
         line-height: 16px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__info
+      flex-basis: 100%
+      order: 0
+      margin-bottom: 15px
+    &__button
+      order: 1
+    &__about-info
+      grid-column: 1/2
+      justify-content: space-between
+    &__pay-card
+      grid-column: 1
+      justify-self: start
 @media (min-width: 320px) and (max-width: 480px)
   .hotel-slider
     height: 179px

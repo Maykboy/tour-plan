@@ -35,6 +35,7 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+    margin-bottom: 95px
   &__ul
     padding: 0
     margin: 0
@@ -88,6 +89,8 @@
     border: none
     flex-basis: 100%
     margin-bottom: 23px
+    max-width: 539px
+    min-height: 123px
   &__button
     min-width: 160px
     min-height: 50px
@@ -106,8 +109,20 @@
     font-size: 12px
     line-height: 15px
     color: $info
-
-
+  &__pay-card
+    grid-column: 4
+    justify-self: end
+  &__about-info
+    display: flex
+    justify-content: space-evenly
+    grid-column-end: 4
+    grid-column-start: 2
+    font-style: normal
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    
+    
     
 
     
