@@ -34,6 +34,6 @@ menuButton.addEventListener('click', function () {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
 });
 
-// $(".newsletter").parallax({
-//   imageSrc: "img/newsletter-bg.jpeg",
-// });
+$(".newsletter").parallax({
+  imageSrc: "img/newsletter-bg.jpeg",
+});
