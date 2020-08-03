@@ -8,6 +8,9 @@
 		padding-bottom: 40px
 		&__menu-button
 			display: none
+			&:active, &:hover, &:focus
+				outline: 0
+				outline-offset: 0
 	&__search
 		margin-right: auto
 		margin-left: 108px
@@ -27,6 +30,10 @@
 			text-transform: uppercase
 			font-size: 14px
 			line-height: 18px
+		&__item
+			&--mobile
+				&_visible
+					display: none
 	.logo
 		&__image
 			width: 177px
@@ -76,3 +83,4 @@
 		font-size: 14px
 		line-height: 18px
 		color: $text-color
+
