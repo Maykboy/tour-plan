@@ -60,6 +60,7 @@ img {
   background-color: #EC1F46;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .button:active, .button:hover, .button:focus {
