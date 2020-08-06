@@ -1670,6 +1670,7 @@ template {
       flex-basis: 100%;
   margin-bottom: 23px;
   max-width: 100%;
+  min-height: 123px;
 }
 
 .footer__info {
