@@ -81,8 +81,12 @@ $(document).ready(function () {
         },
         phone: {
           require: "phone is required",
+          minlength: 10
         },
       },
     });
   });
+
+  let inputs = document.querySelectorAll('input[type="tel"]');
+  $(inputs).mask('+7 (999) 999-99-99');
 });
