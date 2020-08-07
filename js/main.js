@@ -46,8 +46,8 @@ $(document).ready(function () {
 
   function openModal() {
     let targetModal = $(this).attr("data-href");
-    $(targetModal).find(".modal__overlay").addClass('modal__overlay-visible');
-    $(targetModal).find(".modal__dialog").addClass('modal__dialog--visible');
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
   }
 
   function closeModal(event) {
@@ -66,5 +66,23 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
-
+  // Обработка формы
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          require: "Please specify your name",
+          minlength: "name must be no shorter than 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          require: "phone is required",
+        },
+      },
+    });
+  });
 });
