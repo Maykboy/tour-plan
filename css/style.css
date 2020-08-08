@@ -85,6 +85,7 @@ img {
 .invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
+  z-index: 100;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -955,16 +956,7 @@ template {
   text-transform: uppercase;
 }
 
-.subscribe {
-  position: relative;
-  width: 350px;
-  height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
 .subscribe__input {
-  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
@@ -974,6 +966,17 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  z-index: 0;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.subscribe__input-group {
+  position: relative;
+  width: 350px;
+  height: 55px;
 }
 
 .subscribe__button {
@@ -986,6 +989,17 @@ template {
   color: #ffffff;
   min-width: 65px;
   cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.subscribe__button:active, .subscribe__button:hover, .subscribe__button:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.subscribe__button-group {
+  position: relative;
 }
 
 .reviews {
@@ -1650,9 +1664,15 @@ template {
 
 .footer__input {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__input-group {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
