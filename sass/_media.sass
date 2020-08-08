@@ -182,6 +182,10 @@
       grid-column-start: 1
     &__pay-card
       grid-column: 6
+  .modal
+    &__button
+      flex-basis: 100%
+      margin-bottom: 10px
 @media  (max-width: 768px)
   .container
     max-width: 576px
@@ -222,6 +226,10 @@
         &--mobile
           &-visible
             display: block
+            width: 100%
+  .search
+    &__input
+      min-width: 100%
   .menu
     &-button
       display: flex
@@ -308,6 +316,10 @@
     &__input
       &-group
         flex-basis: 100%
+  .modal
+    &__dialog
+      padding: 33px 46px
+      width: 400px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -461,6 +473,10 @@
     &__pay-card
       grid-column: 1
       justify-self: start
+  .modal
+    &__dialog
+      padding: 33px 66px
+      max-width: 400px
 @media (min-width: 320px) and (max-width: 480px)
   .hotel-slider
     height: 179px
@@ -469,3 +485,9 @@
       max-width: 245px
       margin: auto
       margin-bottom: 42px
+  .modal
+    &__dialog
+      padding: 33px 46px
+      max-width: 320px
+    &__close
+      right: 22px
