@@ -907,10 +907,10 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background: transparent;
 }
 
 .newsletter:before {
@@ -976,11 +976,6 @@ template {
   line-height: 18px;
 }
 
-.subscribe__input:active, .subscribe__input:hover, .subscribe__input:focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
 .subscribe__button {
   position: absolute;
   right: 0;
@@ -991,11 +986,6 @@ template {
   color: #ffffff;
   min-width: 65px;
   cursor: pointer;
-}
-
-.subscribe__button:active, .subscribe__button:hover, .subscribe__button:focus {
-  outline: 0;
-  outline-offset: 0;
 }
 
 .reviews {
@@ -1232,11 +1222,6 @@ template {
   cursor: pointer;
 }
 
-.card__button:active, .card__button:hover, .card__button:focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
 .other-packages__title {
   font-style: normal;
   font-weight: bold;
@@ -1398,12 +1383,14 @@ template {
   background-color: #0A223D;
   padding-top: 46px;
   padding-left: 43px;
+  padding-right: 21px;
 }
 
 .package-layer__grid--all {
   background-color: #0A223D;
   padding-top: 30px;
   padding-left: 32px;
+  padding-right: 21px;
 }
 
 .package-layer__title--haven {
@@ -1434,7 +1421,7 @@ template {
 }
 
 .package-info--haven {
-  margin-bottom: 37px;
+  margin-bottom: 54px;
 }
 
 .package-info--all {
@@ -1496,6 +1483,7 @@ template {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  text-decoration: line-through;
 }
 
 .package-price__discount--haven, .package-price__discount--all {
@@ -1521,6 +1509,7 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  font-family: Nunito;
   cursor: pointer;
 }
 
@@ -1844,9 +1833,10 @@ template {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .package-layer__grid--haven {
-    padding-top: 40px;
-    padding-left: 27px;
+  .package-layer__grid--all, .package-layer__grid--haven {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 15px;
   }
   .package-price {
     -ms-grid-columns: 120px;
@@ -1861,6 +1851,9 @@ template {
         grid-column-start: 2;
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+  .package-info--haven {
+    margin-bottom: 47px;
   }
   .footer__input-group {
     -ms-flex-preferred-size: 100%;
@@ -1938,44 +1931,68 @@ template {
     font-size: 30px;
     line-height: 40px;
   }
+  .other-packages__wrapper {
+    margin-bottom: 40px;
+  }
   .other-packages__wrapper--first {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    -ms-grid-columns: 2.2fr 1fr 2fr 1fr;
-        grid-template-columns: 2.2fr 1fr 2fr 1fr;
+    -ms-grid-columns: 2fr 1fr 2fr 1fr;
+        grid-template-columns: 2fr 1fr 2fr 1fr;
   }
   .package-layer__haven {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -ms-grid-column: span 4;
         grid-column-start: span 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .package-layer__mare {
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: minmax(200px, 290px);
+        grid-template-rows: minmax(200px, 290px);
     -ms-grid-column: span 2;
         grid-column-start: span 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .package-layer__white {
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: minmax(200px, 290px);
+        grid-template-rows: minmax(200px, 290px);
     -ms-grid-column: span 2;
         grid-column-start: span 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .package-layer__luxury {
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: minmax(200px, 290px);
+        grid-template-rows: minmax(200px, 290px);
     -ms-grid-column: span 2;
         grid-column-start: span 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .package-layer__star {
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: minmax(200px, 290px);
+        grid-template-rows: minmax(200px, 290px);
     -ms-grid-column: span 2;
         grid-column-start: span 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .package-layer__grid--all, .package-layer__grid--haven {
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 30px;
   }
   .package-info--haven {
-    margin-bottom: 14px;
+    margin-bottom: 80px;
   }
   .package-price {
     -ms-grid-columns: 50%;
@@ -2246,11 +2263,14 @@ template {
   .card {
     width: 100%;
   }
+  .other-packages__wrapper {
+    margin-bottom: 20px;
+  }
   .other-packages__wrapper--first {
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
-    -ms-grid-columns: 4fr 4fr 4fr 4fr;
-        grid-template-columns: 4fr 4fr 4fr 4fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .package-layer__haven {
     -ms-grid-column: 1;
@@ -2290,18 +2310,19 @@ template {
     max-width: 100%;
   }
   .package-layer__grid--haven {
-    background-color: #0A223D;
     padding-top: 30px;
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     padding-right: 10px;
   }
   .package-layer__grid--all {
-    background-color: #0A223D;
     padding-top: 30px;
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     padding-right: 10px;
+  }
+  .package-layer__title--haven {
+    margin-top: 0;
   }
   .package-layer__rating {
     display: none;
@@ -2314,20 +2335,26 @@ template {
         grid-column-start: 3;
   }
   .package-layer__title--haven {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .package-layer__text {
     font-size: 12px;
     line-height: 160.6%;
   }
-  .package-price__full--haven, .package-price__full--all {
-    font-size: 12px;
-    line-height: 16px;
+  .package-info--haven {
+    margin-bottom: 30px;
   }
-  .package-price__discount--haven, .package-price__discount--all {
+  .package-info--all {
+    margin-bottom: 30px;
+  }
+  .package-price__full--haven, .package-price__full--all {
     font-size: 18px;
     line-height: 22px;
+  }
+  .package-price__discount--haven, .package-price__discount--all {
+    font-size: 24px;
+    line-height: 30px;
   }
   .package-price__button--all, .package-price__button--haven {
     font-size: 12px;
@@ -2336,6 +2363,8 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-gap: 15px;
+    grid-auto-rows: auto;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -2343,29 +2372,47 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__social-links {
+    max-width: 80px;
+  }
   .footer__social-network {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .footer__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
   }
   .footer__additional {
     -ms-grid-row: 3;
     grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-bottom: 10px;
   }
   .footer__categories {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-bottom: 10px;
   }
   .footer__legal {
     -ms-grid-row: 5;
     grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-bottom: 10px;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
@@ -2399,6 +2446,12 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
   }
   .footer__pay-card {
     -ms-grid-column: 1;

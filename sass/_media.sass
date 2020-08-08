@@ -32,9 +32,11 @@
       &--haven
         grid-template-columns: 1fr
     &__grid
+      &--all,
       &--haven
-        padding-top: 40px
-        padding-left: 27px
+        padding-top: 30px
+        padding-left: 30px
+        padding-right: 15px
   .package-price
     grid-template-columns: 120px
     &__info
@@ -48,6 +50,9 @@
       &--all
         grid-column-start: 2
         justify-self: start
+  .package-info
+    &--haven
+      margin-bottom: 47px     
   .footer
     &__input
       &-group
@@ -105,28 +110,41 @@
       font-size: 30px
       line-height: 40px
     &__wrapper
+      margin-bottom: 40px
       &--first
         grid-template-rows: repeat(3, 1fr)
-        grid-template-columns: 2.2fr 1fr 2fr 1fr 
+        grid-template-columns: 2fr 1fr 2fr 1fr 
   .package-layer
     &__haven
       grid-template-rows: 1fr
       grid-column-start: span 4
+      align-self: center
     &__mare
-      grid-template-rows: repeat(2, 1fr)
+      grid-template-rows: minmax(200px, 290px)
       grid-column-start: span 2
+      align-self: center
     &__white
-      grid-template-rows: repeat(2, 1fr)
+      grid-template-rows: minmax(200px, 290px)
       grid-column-start: span 2
+      align-self: center
     &__luxury
-      grid-template-rows: repeat(2, 1fr)
+      grid-template-rows: minmax(200px, 290px)
       grid-column-start: span 2
+      align-self: center
     &__star
-      grid-template-rows: repeat(2, 1fr)
+      grid-template-rows: minmax(200px, 290px)
       grid-column-start: span 2
+      align-self: center
+    &__grid
+      &--all,
+      &--haven
+        padding-top: 30px
+        padding-right: 15px
+        padding-bottom: 10px
+        padding-left: 30px
   .package-info
     &--haven
-      margin-bottom: 14px
+      margin-bottom: 80px
   .package-price
     grid-template-columns: 50%
     margin-bottom: 10px
@@ -307,11 +325,11 @@
   .card
     width: 100% 
   .other-packages
-    &__title
     &__wrapper
+      margin-bottom: 20px
       &--first
         grid-template-rows: repeat(5, 1fr)
-        grid-template-columns: 4fr 4fr 4fr 4fr
+        grid-template-columns: 1fr 1fr 1fr 1fr
   .package-layer
     &__haven
       grid-column-start: 1
@@ -339,17 +357,18 @@
         max-width: 100%
     &__grid
       &--haven
-        background-color: $dark
         padding-top: 30px
         padding-left: 30px
-        padding-bottom: 30px
+        padding-bottom: 0
         padding-right: 10px
       &--all
-        background-color: $dark
         padding-top: 30px
         padding-left: 30px
-        padding-bottom: 30px
+        padding-bottom: 0
         padding-right: 10px
+    &__title
+      &--haven
+        margin-top: 0
     &__rating
       display: none
     &__text
@@ -362,22 +381,27 @@
     &__title
       &--all
       &--haven
-        font-size: 15px
-        line-height: 18px
+        font-size: 18px
+        line-height: 22px
     &__text
       font-size: 12px
       line-height: 160.6%
+  .package-info
+    &--haven
+      margin-bottom: 30px
+    &--all
+      margin-bottom: 30px
   .package-price
     &__full
       &--haven,
       &--all
-        font-size: 12px
-        line-height: 16px
+        font-size: 18px
+        line-height: 22px
     &__discount
       &--haven,
       &--all
-        font-size: 18px
-        line-height: 22px
+        font-size: 24px
+        line-height: 30px
     &__button
       &--all,
       &--haven
@@ -386,22 +410,36 @@
   .footer
     &-wrapper
       grid-template-columns: 1fr
+      grid-gap: 15px
+      grid-auto-rows: auto
     &__logo
       grid-row: 1
       grid-column: 1
     &__social
+      &-links
+        max-width: 80px
       &-network
         grid-row: 2
         grid-column: 1
+        flex-wrap: wrap
+        margin-bottom: 10px
+    &__title
+      display: flex
+      flex-basis: 100%
+      margin-bottom: 20px
+      margin-right: 0  
     &__additional
       grid-row: 3
       grid-column: 1
+      margin-bottom: 10px
     &__categories
       grid-row: 4
       grid-column: 1
+      margin-bottom: 10px
     &__legal
       grid-row: 5
       grid-column: 1
+      margin-bottom: 10px
     &__contact
       &-details
         grid-row: 6
@@ -418,6 +456,8 @@
     &__about-info
       grid-column: 1/2
       justify-content: space-between
+      align-self: center
+      grid-template-rows: min-content
     &__pay-card
       grid-column: 1
       justify-self: start
