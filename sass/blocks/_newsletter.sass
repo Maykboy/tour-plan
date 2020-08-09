@@ -1,6 +1,8 @@
 .newsletter
   position: relative
   padding: 98px 0 87px 0
+  max-height: 260px
+  display: flex
   background-repeat: no-repeat
   background-position: center 
   background-size: cover
@@ -20,7 +22,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    max-width: 731px
+    min-width: 731px
     margin: auto
   &-title
     color: $light
@@ -48,8 +50,8 @@
     margin-bottom: 5px 
     z-index: 0
     &:active, &:hover, &:focus
-  		outline: 0
-  		outline-offset: 0
+      outline: 0
+      outline-offset: 0
     &-group
       position: relative
       width: 350px
