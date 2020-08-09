@@ -36,7 +36,7 @@ $(document).ready(function () {
   });
 
   $(".newsletter").parallax({
-    imageSrc: "img/newsletter-bg.jpeg",
+    imageSrc: "img/newsletter-bg.jpg",
   });
 
   let modalButton = $('[data-toggle="modal"]');
